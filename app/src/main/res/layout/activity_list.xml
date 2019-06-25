@@ -9,4 +9,4 @@
             android:id="@+id/list"
             tools:listitem="@layout/layout_item_basic"/>
 
-</FrameLayout>
+    </FrameLayout>

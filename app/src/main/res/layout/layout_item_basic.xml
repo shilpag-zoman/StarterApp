@@ -5,10 +5,16 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-android:padding="12dp">
+              android:padding="12dp">
     <TextView android:layout_width="match_parent"
               android:layout_height="match_parent"
     android:id="@+id/text"
     android:text="Some text"/>
+
+    <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"
+            android:background="#006400"/>
 
 </LinearLayout>

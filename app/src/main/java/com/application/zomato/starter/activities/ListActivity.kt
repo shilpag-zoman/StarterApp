@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.application.zomato.starter.R
 import com.application.zomato.starter.adapter.MyListAdapter
+import com.application.zomato.starter.data.restaurant
 import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
@@ -17,7 +18,15 @@ class ListActivity : AppCompatActivity() {
         /**
          * Change the initialisation to your type of list
          */
-        adapter.items = listOf("Item 1", "Item 2", "Item 3")
+        var list = ArrayList<restaurant>()
+        list.add(restaurant("Dominos","kalkaji","pizza"))
+        list.add(restaurant("Subway","nehru place","fast food"))
+        list.add(restaurant())
+        list.add(restaurant())
+        list.add(restaurant())
+        list.add(restaurant())
+        list.add(restaurant())
+        adapter.items = list
         /**
          * Very important operation to perform when data is changed
          */

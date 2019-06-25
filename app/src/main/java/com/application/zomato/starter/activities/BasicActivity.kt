@@ -6,6 +6,7 @@ import android.widget.TextView
 import com.application.zomato.starter.R
 import kotlinx.android.synthetic.main.activity_basic.*
 
+
 class BasicActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,5 +15,10 @@ class BasicActivity : AppCompatActivity() {
          * Linking an xml layout to a view.
          */
         setContentView(R.layout.activity_basic)
+        val textview1 = findViewById<TextView>(R.id.text1);
+        textview1.text="Loriam ipsom dolor sit"
+
+        val textview2 = findViewById<TextView>(R.id.text2);
+        textview2.text="Loriam ipsom dolor sit hjgjkldf sdefrgdhfj sdfghj sdfbgkh"
     }
 }
